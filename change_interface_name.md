@@ -1,6 +1,6 @@
 # Change Network Interface Name
-I've encountered a weird and long interface name after installing drivers for my TP-Link Archer T2U Plus USB Wifi Adapter in My Linux Machine. 
-It was shown up as **"wlx984827a0287e"** as the result of `ifconfig` or `iwconfig`. I was only familiar with names like wlan0,wlan1,wlp1s0 .etc 
+I've encountered a weird and long interface name after [installing drivers for my TP-Link Archer T2U Plus](https://github.com/nlkguy/archer-t2u-plus-linux/blob/main/README.md) USB Wifi Adapter in My Linux Machine. 
+It was shown up as **"wlx984827a0287e"** in the result of `ifconfig` or `iwconfig`. I was only familiar with names like wlan0,wlan1,wlp1s0 .etc 
 So i changed **"wlx984827a0287e"**. Smaller is sometimes better  :smile: .  Here is how i did it.
 
 <img src="https://github.com/nlkguy/archer-t2u-plus-linux/blob/main/Images/lsusb%3Biwconfig.png" alt="lsusb&iwconfig_result" width="50%" height="50%">
