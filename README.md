@@ -30,6 +30,8 @@ This adapter has a **Realtek RTL8821AU Chipset** at its heart. RTL8821AU has ple
 7. Check the wireless interfaces by typing `iwconfig`.
 <img src="https://github.com/nlkguy/archer-t2u-plus-linux/blob/main/Images/lsusb%3Biwconfig.png" alt="lsusb&iwconfig_result" width="50%" height="50%">
 
+:point_right: [Change/Rename Network Interface](https://github.com/nlkguy/archer-t2u-plus-linux/blob/main/change_interface_name.md)
+
 
 ## Driver for Raspberry Pi (Raspbian OS / Kali)(ARM)
 
@@ -74,4 +76,7 @@ This adapter has a **Realtek RTL8821AU Chipset** at its heart. RTL8821AU has ple
 <img src="https://github.com/nlkguy/archer-t2u-plus-linux/blob/main/Images/kali-arm-installing.png" alt="Kali-ARM-RPi-Installing" width="70%" height="70%">
 
 8. Check the wireless interfaces by typing `iwconfig`.
+
+:point_right: [Change/Rename Network Interface](https://github.com/nlkguy/archer-t2u-plus-linux/blob/main/change_interface_name.md)
+
 
