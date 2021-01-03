@@ -79,4 +79,5 @@ This adapter has a **Realtek RTL8821AU Chipset** at its heart. RTL8821AU has ple
 
 :point_right: [Change/Rename Network Interface](https://github.com/nlkguy/archer-t2u-plus-linux/blob/main/change_interface_name.md)
 
-
+## References
+>[DigitalOcean.com : Sed Stream Editor Basics](https://www.digitalocean.com/community/tutorials/the-basics-of-using-the-sed-stream-editor-to-manipulate-text-in-linux)
