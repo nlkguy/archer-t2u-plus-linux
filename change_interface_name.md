@@ -13,9 +13,8 @@ Disable [predicatble Network Interface names](https://wiki.archlinux.org/index.p
 
 >```sudo nano /etc/default/grub```
 
-Add ```net.ifnames=0 biosdevname=0 to GRUB_CMDLINE_LINUX=""``` like this:
-
-```GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"```
+Add ```net.ifnames=0 biosdevname=0 to GRUB_CMDLINE_LINUX=""```  
+like this:```GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"```
 
 2. Update grub.cfg :
 
