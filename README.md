@@ -26,6 +26,9 @@ This adapter has a **Realtek RTL8821AU Chipset** at its heart. RTL8821AU has ple
 >```cd rtl88*```
 6. Install the Driver 
 >```sudo make dkms_install```
+if the installation is aborted , execute this command 
+>'''sudo dkms remove 8812au/5.6.4.2_35491.20191025 --all'''  , if errors pop up 
+>'''Usage: remove <module>/<module-version> --all'''
 
 7. Check the wireless interfaces by typing `iwconfig`.
 <img src="https://github.com/nlkguy/archer-t2u-plus-linux/blob/main/Images/lsusb%3Biwconfig.png" alt="lsusb&iwconfig_result" width="50%" height="50%">
