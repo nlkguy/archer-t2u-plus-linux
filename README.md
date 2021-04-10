@@ -1,6 +1,6 @@
 # TP-Link Archer T2U Plus a.k.a AC600 High-Gain
 
-TP-Link Archer T2U Plus a.k.a AC600 High Gain is a very **affordable** dual band wireless adapter **compatible with kali linux** and supports monitor mode , soft AP mode,packet injection etc. it supports both 2.4 GHz and 5GHz band and has a 5dBi Antenna for better signal reception.
+TP-Link Archer T2U Plus a.k.a AC600 High Gain is a very **affordable** dual band wireless adapter **compatible with kali linux** and supports monitor mode , soft AP mode,packet injection etc. it supports both 2.4 GHz and 5GHz band and has a 5dBi Antenna for better signal reception.2357:0120
 
 <img src="https://github.com/nlkguy/archer-t2u-plus-linux/blob/main/Images/archer-t2u-inside.jpeg" alt="Retail Box" width="40%" height="40%">
 
