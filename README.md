@@ -82,5 +82,27 @@ if the installation is aborted , execute this command
 
 :point_right: [Change/Rename Network Interface](https://github.com/nlkguy/archer-t2u-plus-linux/blob/main/change_interface_name.md)
 
+## Uninstall Driver in Linux
+
+- check the module name and version using the command ```sudo dkms status.```  </br>  
+  ```
+  $ dkms status  
+  8812au, 5.6.4.2_35491.20191025, 5.10.63+, armv6l: installed  
+  rtl8188fu, 1.0, 5.10.63+, armv6l: installed.```  
+
+- here module name is ```8812au``` and module version is ```5.6.4.2_35491.20191025```.
+
+- use ```sudo dkms remove <module>/<module-version>.```  </br>  
+  ```
+  $ sudo dkms remove 8812au/5.6.4.2_35491.20191025 --all  
+  
+  Deleting module version: 5.6.4.2_35491.20191025 completely from the DKMS tree.  
+  
+  Done.  
+  ```
+
+- delete this file using  ```sudo rm -rf /var/lib/dkms/8812au/```.
+
+  
 ## References
 >[DigitalOcean.com : Sed Stream Editor Basics](https://www.digitalocean.com/community/tutorials/the-basics-of-using-the-sed-stream-editor-to-manipulate-text-in-linux)
