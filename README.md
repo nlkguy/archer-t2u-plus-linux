@@ -1,10 +1,13 @@
 # TP-Link Archer T2U Plus a.k.a AC600 High-Gain
 
-TP-Link Archer T2U Plus a.k.a AC600 High Gain is a very **affordable** dual band wireless adapter **compatible with kali linux** and supports monitor mode , soft AP mode,packet injection etc. it supports both 2.4 GHz and 5GHz band and has a 5dBi Antenna for better signal reception.2357:0120
+TP-Link Archer T2U Plus a.k.a AC600 High Gain is a very **affordable** dual band wireless adapter **compatible with kali linux** and supports monitor mode , soft AP mode,packet injection etc. it supports both 2.4 GHz and 5GHz band and has a 5dBi Antenna for better signal reception. 2357:0120
+
 <p align = "center">
 <img src="https://github.com/nlkguy/archer-t2u-plus-linux/blob/main/Images/archer-t2u-inside.jpeg" alt="Retail Box" width="40%" height="40%">
 </p>
+
 ## Why should i buy this adapter ?
+
 This adapter has a **Realtek RTL8821AU Chipset** at its heart. RTL8821AU has plenty of developer support in linux community and has driver for Kali linux , Parrot OS .etc Archer T2U Plus is on sale **under 15 USD ~ 1000 INR** , which is a very affordable price for Beginners in Pentesting. 2357:0120 is the USB ID.
 
 ## Where to buy
@@ -26,12 +29,15 @@ This adapter has a **Realtek RTL8821AU Chipset** at its heart. RTL8821AU has ple
 >```cd rtl88*```
 6. Install the Driver 
 >```sudo make dkms_install```
-if the installation is aborted , execute this command 
->'''sudo dkms remove 8812au/5.6.4.2_35491.20191025 --all'''  , if errors pop up 
->'''Usage: remove <module>/<module-version> --all'''
+
+if the installation is aborted , check existing dkms modules and uninstall previously installed driver 
+
+:point_right: [Uninstall Existing Driver](https://github.com/nlkguy/archer-t2u-plus-linux#uninstall-driver-in-linux)
 
 7. Check the wireless interfaces by typing `iwconfig`.
 <img src="https://github.com/nlkguy/archer-t2u-plus-linux/blob/main/Images/lsusb%3Biwconfig.png" alt="lsusb&iwconfig_result" width="50%" height="50%">
+
+if you encounter any weird interface name , rename the Wireless interface by following below steps
 
 :point_right: [Change/Rename Network Interface](https://github.com/nlkguy/archer-t2u-plus-linux/blob/main/change_interface_name.md)
 
