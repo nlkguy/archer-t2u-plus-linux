@@ -1,5 +1,18 @@
 # TP-Link Archer T2U Plus a.k.a AC600 High-Gain
 
+
+&nbsp;
+[![Stargazers repo roster for @nlkguy/archer-t2u-plus-linux](https://reporoster.com/stars/nlkguy/archer-t2u-plus-linux)](https://github.com/nlkguy/archer-t2u-plus-linux/stargazers)
+&nbsp;
+
+## Table of contents
+
+<p align = "left">
+<a href="https://github.com/Krishak15/archer-t2u-plus-linux/edit/main/README.md#driver-for-debian-based-linux-distros-ubuntukali-linuxx86_64"> 1) Driver for Debian Based Linux Distros (Ubuntu/Kali Linux)(x86_64 </a> <br>
+  <a href="https://github.com/Krishak15/archer-t2u-plus-linux/edit/main/README.md#driver-for-raspberry-pi-raspbian-os--kaliarm"> 2) Driver for Raspberry Pi (Raspbian OS / Kali)(ARM)</a><br>
+  <a href="https://github.com/Krishak15/archer-t2u-plus-linux/edit/main/README.md#uninstall-driver-in-linux"> 3) Uninstall Driver in Linux</a>
+</p>
+
 TP-Link Archer T2U Plus a.k.a AC600 High Gain is a very **affordable** dual band wireless adapter **compatible with kali linux** and supports monitor mode , soft AP mode,packet injection etc. it supports both 2.4 GHz and 5GHz band and has a 5dBi Antenna for better signal reception. 2357:0120
 
 <p align = "center">
