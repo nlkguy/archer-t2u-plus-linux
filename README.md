@@ -10,7 +10,8 @@
 <p align = "left">
 <a href="https://github.com/Krishak15/archer-t2u-plus-linux/edit/main/README.md#driver-for-debian-based-linux-distros-ubuntukali-linuxx86_64"> 1) Driver for Debian Based Linux Distros (Ubuntu/Kali Linux)(x86_64 </a> <br>
   <a href="https://github.com/Krishak15/archer-t2u-plus-linux/edit/main/README.md#driver-for-raspberry-pi-raspbian-os--kaliarm"> 2) Driver for Raspberry Pi (Raspbian OS / Kali)(ARM)</a><br>
-  <a href="https://github.com/Krishak15/archer-t2u-plus-linux/edit/main/README.md#uninstall-driver-in-linux"> 3) Uninstall Driver in Linux</a>
+  <a href="https://github.com/Krishak15/archer-t2u-plus-linux/edit/main/README.md#uninstall-driver-in-linux"> 3) Uninstall Driver in Linux</a><br/>
+  <a href="https://github.com/Krishak15/archer-t2u-plus-linux/edit/main/README.md#troubleshooting"> 4) Troubleshooting</a>
 </p>
 
 TP-Link Archer T2U Plus a.k.a AC600 High Gain is a very **affordable** dual band wireless adapter **compatible with kali linux** and supports monitor mode , soft AP mode,packet injection etc. it supports both 2.4 GHz and 5GHz band and has a 5dBi Antenna for better signal reception. 2357:0120
@@ -122,6 +123,29 @@ if you encounter any weird interface name , rename the Wireless interface by fol
 
 - delete this file using  ```sudo rm -rf /var/lib/dkms/8812au/```.
 
-  
+## Troubleshooting
+On Raspberry Pi 4 and Debian 10 image with kernel `5.10.103-v7l+`, I get this error.
+```txt
+user@pc:~/rtl8812au $ sudo make dkms_install                    
+cp -r * /usr/src/8812au-5.6.4.2_35491.20191025                                        
+1dkms add -m 8812au -v 5.6.4.2_35491.20191025                               
+                                                                                        
+Creating symlink /var/lib/dkms/8812au/5.6.4.2_35491.20191025/source ->
+                 /usr/src/8812au-5.6.4.2_35491.20191025
+                                               
+DKMS: add completed.          
+dkms build -m 8812au -v 5.6.4.2_35491.20191025
+Error! echo
+Your kernel headers for kernel 5.10.103-v7l+ cannot be found at
+/lib/modules/5.10.103-v7l+/build or /lib/modules/5.10.103-v7l+/source.
+make: *** [Makefile:1786: dkms_install] Error 1
+```
+In my case, there is a build directory, but it was empty.
+I added a symbolic link in `/lib/modules/$(uname -r)` to the source files as follows:
+```bash
+rm -r /lib/modules/$(uname -r)/build
+ln -s /usr/src/linux-headers-$(uname -r)/ /lib/modules/$(uname -r)/build
+make dkms_install # now it works
+```
 ## References
 >[DigitalOcean.com : Sed Stream Editor Basics](https://www.digitalocean.com/community/tutorials/the-basics-of-using-the-sed-stream-editor-to-manipulate-text-in-linux)
