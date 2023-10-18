@@ -5,6 +5,8 @@
 [![Stargazers repo roster for @nlkguy/archer-t2u-plus-linux](https://reporoster.com/stars/nlkguy/archer-t2u-plus-linux)](https://github.com/nlkguy/archer-t2u-plus-linux/stargazers)
 &nbsp;
 
+## [Important] this repo is under scrutiny as the driver is not working properly , meantime [this](https://github.com/morrownr/8821au-20210708) is working , this repo will be updated shortly
+
 ## Table of contents
 
 <p align = "left">
